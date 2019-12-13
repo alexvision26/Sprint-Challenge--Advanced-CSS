@@ -34,13 +34,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+An adaptive layout website is one that can change is entire layout based on screen size. It might look like a completely different format on a desktop version of the site versus the mobile version. Whereas a fully responsive website is one that scales through various screen sizes and the content changes size and orientation based in the width of the viewport.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+A mobile first design is when a designer starts the layout based on mobile users. These sites typically are designed smaller and compact and then scale upwards using 'min-width' properties to allow the content to scale up. Desktop first is the opposite, it starts from a full width design and scales down using properties like 'max-width'. The main difference between the two depends on who and how your main audience interacts with your product/service/website.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+The property font-size: 62.5% sets the global font to 62.5% of the default pixel font of browsers, which is 16px. This equals 10px which allows us to use rems and ems for easy scaling. It becomes easy to scale and can be done with basic math as it keeps rem to a 1:10 ratio.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+I would describe preprocessing as a much more intuitive, organized and powerful use of CSS. With a bit of JavaScript 'magic' it gives CSS a plethora of new properties and abilities. It allows us to work on and manage projects of a much higher scale efficiently while keeping it 100x more organized.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+My favorite concept is mixins and variables. It's a lot like JavaScript and I feel it gives a ton more control of a website, allowing you to make global changes by only having to change a single property. The only trouble I have with preprocessing is that I sometimes get confused by the layers of selectors (children) that can be in one single class or element called. All of the curly braces can become quite confusing and sometimes it hurts my eyes to look at. But at the same time, it also makes selecting the specific parts you want to style easier.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
@@ -104,7 +114,7 @@ _You will know everything is working properly when you see the styles enabled fo
 
 * [x] Main Content Styles: Use the `home-page.less` file for styling
 
-* [ ] LESS Mixins: Create and use 2 different mixins to aid your styling. Use the `mixins.less` file for your mixins
+* [x] LESS Mixins: Create and use 2 different mixins to aid your styling. Use the `mixins.less` file for your mixins
 
 * [x] LESS Parametric Mixin: create a parametric mixin that is used to create the `sign up` button styles.
 
@@ -114,11 +124,11 @@ _You will know everything is working properly when you see the styles enabled fo
 
 ### Mobile Design
 
-* [ ] Create a `@phone` variable that contains a `max-width: 500px` media query string. Use the `@phone` variable for all your nested mobile styling.
+* [x] Create a `@phone` variable that contains a `max-width: 500px` media query string. Use the `@phone` variable for all your nested mobile styling.
 
-* [ ] [Review the provided home mobile design file](design-files/home-mobile.png). Match your mobile styling the best you can using the design file.
+* [x] [Review the provided home mobile design file](design-files/home-mobile.png). Match your mobile styling the best you can using the design file.
 
-* [ ] Push your changes and create a pull request if you haven't already.
+* [x] Push your changes and create a pull request if you haven't already.
 
 In your solution, it is essential that you follow best practices and produce clean and professional results. Schedule time to review, refine, and assess your work and perform basic professional polishing including spell-checking and grammar-checking on your work. It is better to submit a challenge that meets MVP than one that attempts too much and does not.
 
