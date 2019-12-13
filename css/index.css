@@ -347,3 +347,42 @@ form span {
 button {
   width: 50%;
 }
+.mission {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 1%;
+  margin: 3% auto;
+  border-top: 1px solid #dee2e6;
+}
+.mission div {
+  padding: 2%;
+}
+.cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 6% auto;
+}
+.cta div {
+  margin-top: 3%;
+}
+.cta .btn2 {
+  color: #F6F6F6;
+  background-color: #23293B;
+  border-radius: 7px;
+  font-size: 1.4rem;
+  width: 28%;
+  text-align: center;
+  padding: 2%;
+  margin-bottom: 1%;
+}
+.cta .btn2:hover {
+  color: #23293B;
+  background-color: #F6F6F6;
+}
+@media (max-width:500px) {
+  .cta .btn2 {
+    width: 100%;
+    padding: 5%;
+  }
+}
