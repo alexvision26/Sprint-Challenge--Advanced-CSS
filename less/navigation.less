@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    background-color: rgb(247, 247, 247);
+    background-color: @nav-bg;
     text-align: center;
 
     div {
@@ -14,15 +14,11 @@
 
     h1 {
         font-size: 4rem;
+        color: @header-font-color;
     }
 
     a {
-        font-size: 1.6rem;
-        text-decoration: none;
-        color: black;
-        padding: 1.5%;
-        width: 100%;
-        text-align: center;
+        .linkStyles();
     }
 
 
