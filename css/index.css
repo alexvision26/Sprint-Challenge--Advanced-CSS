@@ -357,6 +357,41 @@ button {
 .mission div {
   padding: 2%;
 }
+@media (max-width:850px) {
+  .mission div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    padding: 0%;
+    margin: 1% auto;
+    text-align: justify;
+  }
+  .mission div img {
+    width: 50%;
+  }
+  .mission div p {
+    width: 50%;
+  }
+}
+@media (max-width:850px) and (max-width:500px) {
+  .mission div {
+    width: 100%;
+    margin: 2% 0;
+  }
+  .mission div img {
+    width: 80%;
+  }
+  .mission div p {
+    width: 80%;
+  }
+}
+@media (max-width:850px) {
+  .mission {
+    width: 100%;
+    flex-direction: column;
+  }
+}
 .cta {
   display: flex;
   flex-direction: column;
@@ -365,6 +400,19 @@ button {
 }
 .cta div {
   margin-top: 3%;
+}
+.cta h2 {
+  font-size: 2.4vw;
+}
+@media (max-width:850px) {
+  .cta h2 {
+    font-size: 4vw;
+  }
+}
+@media (max-width:500px) {
+  .cta h2 {
+    font-size: 5vw;
+  }
 }
 .cta .btn2 {
   color: #F6F6F6;
@@ -384,5 +432,15 @@ button {
   .cta .btn2 {
     width: 100%;
     padding: 5%;
+  }
+}
+@media (max-width:850px) {
+  .cta .btn2 {
+    width: 30%;
+  }
+}
+@media (max-width:500px) {
+  .cta .btn2 {
+    width: 80%;
   }
 }
