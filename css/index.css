@@ -151,9 +151,15 @@ h2 {
 h3 {
   font-size: 2.8rem;
 }
+h4 {
+  font-size: 1.8rem;
+}
 p {
   font-size: 1.6rem;
   line-height: 1.4;
+}
+span {
+  font-size: 1.3rem;
 }
 .container {
   max-width: 800px;
@@ -166,6 +172,8 @@ p {
   width: 100%;
   background-color: #F6F6F6;
   text-align: center;
+  position: fixed;
+  opacity: 0.9;
 }
 .navbar div {
   width: 100%;
@@ -300,4 +308,42 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+header {
+  padding-top: 14%;
+}
+@media (max-width:500px) {
+  header {
+    padding-top: 16%;
+  }
+}
+.contact-sec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 3% 0;
+}
+.contact-sec h4 {
+  text-align: center;
+}
+.space-mag {
+  width: 100%;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  margin: 2% auto;
+}
+form label {
+  color: #454A59;
+  font-size: 1.4rem;
+  margin: 1% 0;
+}
+form span {
+  padding: 1% 0;
+}
+button {
+  width: 50%;
 }
