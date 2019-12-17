@@ -3,11 +3,14 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>SpaceWalkers</title>
 
   <link href="https://fonts.googleapis.com/css?family=Russo+One|Ubuntu" rel="stylesheet">
   <link href="css/index.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="CSS-Animations/animate.css-master/animate.css">
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -17,11 +20,29 @@
 <body>
 
  <!-- navigation code here -->
+ <div class="navbar">
+ 
+     <div>
+       <h1 class="title animated bounceInDown">SpaceWalkers</h1>
+     </div>
+
+    <div>
+     <nav>
+       <a href="index.html">Home</a>
+       <a href="about.html">About Us</a>
+       <a href="#">Blog</a>
+       <a href="#">Contact</a>
+       <a href="#">Sign In</a>
+     </nav>
+    </div>
+
+  </div>
 
   <div class="container home">
 
     <header class="intro">
        <!-- image code here -->
+       <img src="img/main-header.png" class="banner" alt="Header image of planet earth from space">
 
       <h2>Lift Off</h2>
     
@@ -60,6 +81,30 @@
           <img src="img/space-walk.png" alt="Space walking astronaut">
       </div>
 
+    </section>
+
+    <section class="contact">
+      <div class="contact-sec">
+      <h4>Subscribe to SpaceWalkers Magazine!</h4>
+        <div class="space-mag">
+          
+            <form>
+              <label>Your Name:</label>
+              <input name="name" type="text">
+              <label>Your Email:</label>
+              <input name="email" type="text">
+              <label>Select subscription:</label>
+              <input type="radio" name="sub" value="month"> <span>$5.99 Month to Month</span><br>
+              <input type="radio" name="sub" value="year"> <span>$49.99 Yearly</span><br>
+              <br><button>Subscribe!</button>
+            </form>
+  
+      </div>
+    </div>
+  
+  
+  
+  
     </section>
 
     <footer>

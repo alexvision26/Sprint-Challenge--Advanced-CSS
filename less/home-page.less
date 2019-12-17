@@ -19,16 +19,32 @@
     flex-wrap: wrap;
     width: 100%;
 
+    @media @phone {
+      .sky {
+        display: none;
+      }
+      .launch {
+        display: none;
+      }
+    }
+
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+
+      @media @phone {
+        width: 100%;
+      }
+
     }
+
   }
 
   .visit-planets {
     padding: 15px;
+    margin-bottom: 0;
 
     h3 {
       margin-top: 11px;
@@ -40,14 +56,26 @@
   }
 
   .walk {
-    margin-top: 60px;
+    margin-top: 35px;
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
     display: flex;
     justify-content: center;
 
+    @media @phone {
+      flex-direction: column-reverse;
+      align-items: center;
+      width: 100%;
+      margin-bottom: 4%;
+      padding:0;
+    }
+
     .walk-text {
       width: 50%;
+
+      @media @phone {
+        width: 90%;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -58,12 +86,19 @@
       }
 
       .btn {
+        .signupButton(@signup-button-color, @signup-font-color);
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
+      @media @phone {
+        width:95%;
+        margin: 1% 0 3% 0;
+        padding-top: 4%;
+      }
       
       img {
         width: 100%;
@@ -73,3 +108,134 @@
     }
   }
 }// home
+
+header {
+  padding-top: 14%;
+
+  @media @phone {
+    padding-top: 16%;
+  }
+}
+
+.contact-sec{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  width:100%;
+  margin: 3% 0;
+
+  h4 {
+    text-align: center;
+  }
+}
+
+.space-mag {
+  width: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  margin: 2% auto;
+
+  label {
+    color: @nav-font;
+    font-size: 1.4rem;
+    margin: 1% 0;
+  }
+
+  span {
+    padding: 1% 0;
+  }
+}
+
+button {
+  width: 50%;
+}
+
+//About Page Styling
+.mission {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 1%;
+  margin: 3% auto;
+  border-top: 1px solid @main-border-color;
+
+  div {
+    padding: 2%;
+
+    @media @tablet {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 90%;
+      padding: 0%;
+      margin: 1% auto;
+      text-align: justify;
+
+      img {
+        width: 50%;
+      }
+
+      p {
+        width: 50%;
+      }
+
+      @media @phone {
+        width:100%;
+        margin: 2% 0;
+
+        img {
+          width: 80%;
+        }
+
+        p {
+          width: 80%;
+        }
+      }
+    }
+  }
+
+  @media @tablet {
+    width:100%;
+    flex-direction: column;
+  }
+}
+
+.cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 6% auto;
+
+  div {
+    margin-top: 3%;
+  }
+
+  h2 {
+    font-size: 2.4vw;
+
+    @media @tablet {
+      font-size: 4vw;
+    }
+
+    @media @phone {
+      font-size:5vw;
+    }
+  }
+
+  .btn2 {
+    .signupButton(@signup-button-color, @signup-font-color);
+    margin-bottom: 1%;
+
+    @media @tablet {
+      width: 30%;
+    }
+
+    @media @phone {
+      width: 80%;
+    }
+  }
+
+}
